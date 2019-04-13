@@ -3,7 +3,7 @@
 数据预处理
 ___________
     #第一步 导入库
-    import numpy as np
+    `import` numpy `as` np
     import pandas as pd
 
     #第二步 导入数据库
