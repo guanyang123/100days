@@ -3,7 +3,7 @@
 数据预处理
 ___________
 #第一步 导入库
-import numpy as np        #numpy:以矩阵为基础的数学计算模块，纯数学。
+import numpy as np        #numpy:以矩阵为基础的数学计算模块，纯数学。  
 import pandas as pd       #Pandas:属于一款很适合做数据分析的框架，可以理解成表格+时间戳,即表格容器。
 
     #第二步 导入数据库
