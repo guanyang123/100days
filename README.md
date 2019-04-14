@@ -10,12 +10,13 @@ ___________
     X=dataset.iloc[:,:-1].values      #全部行or列；[a]第a行or列  iloc[前闭后开]方法：通过行号获取行数据，不能是字符(输出所有行第0列到倒数第二列的内容)
     #print("X为: "+str(X))
     Y=dataset.iloc[:,3].values        #(输出所有行第三列的内容）
-    print("Y为: "+str(Y))
+    #print("Y为: "+str(Y))
 
     #第三步 处理丢失数据
     from sklearn.preprocessing import Imputer     #从sklearn.preprocessing模块中导入Imputer函数
     imputer=Imputer(missing_values="NaN",strategy="mean",axis=0)    #使用字符串'nan'来代替数据集中的缺失值;strategy采用均值策略,填补第0列;axis = 0指第0列，axis后面的值是指定一个轴做运算
     imputer=imputer.fit(X[:1,1:3])      #fit():求得训练集X的均值为训练集X固有的属性
+    #print(X)
 
     #第四步 解决分类数据
     from sklearn.preprocessing import LabelEncoder,OneHotEncoder       #LabelEncoder()是标签编码，即是对不连续的数字或者文本进行编号，转换成连续的数值型变量
@@ -33,6 +34,8 @@ ___________
 
     #第六步 特征量化
     from sklearn.preprocessing import StandardScaler
-    sc_X=StandardScaler()
+    sc_X=StandardScaler()           #StandardScaler():计算训练集的平均值和标准差，以便测试数据集使用相同的变换
     X_train=sc_X.fit_transform(X_train)
     X_test=sc_X.transform(X_test)
+    #print(X_train)
+    #print(X_test)
