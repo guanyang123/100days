@@ -2,12 +2,12 @@
 ===========
 数据预处理
 ___________
-#第一步 导入库  
-import numpy as np        #numpy:以矩阵为基础的数学计算模块，纯数学。  
-import pandas as pd       #Pandas:属于一款很适合做数据分析的框架，可以理解成表格+时间戳,即表格容器。  
-#第二步 导入数据库  
-dataset=pd.read_csv('Data.csv')   #读取csv文件  
-X=dataset.iloc[:,:-1].values      #:全部行 or 列；[a]第a行or列
+    #第一步 导入库  
+    import numpy as np        #numpy:以矩阵为基础的数学计算模块，纯数学。  
+    import pandas as pd       #Pandas:属于一款很适合做数据分析的框架，可以理解成表格+时间戳,即表格容器。  
+    #第二步 导入数据库  
+    dataset=pd.read_csv('Data.csv')   #读取csv文件  
+    X=dataset.iloc[:,:-1].values      #:全部行 or 列；[a]第a行or列
 
     #第三步 处理丢失数据
     from sklearn.preprocessing import Imputer
