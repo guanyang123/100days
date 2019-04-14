@@ -6,8 +6,10 @@ ___________
     import numpy as np        #numpy:以矩阵为基础的数学计算模块，纯数学。  
     import pandas as pd       #Pandas:属于一款很适合做数据分析的框架，可以理解成表格+时间戳,即表格容器。  
     #第二步 导入数据库  
-    dataset=pd.read_csv('Data.csv')   #读取csv文件  
-    X=dataset.iloc[:,:-1].values      #:全部行 or 列；[a]第a行or列
+    dataset=pd.read_csv('Data.csv')   #读取csv文件  read_csv()方法： 从文件，url，文件型对象中加载带分隔符的数据。默认分隔符为逗号  
+    X=dataset.iloc[:,:-1].values      #:全部行or列；[a]第a行or列  iloc[]方法：通过行号获取行数据，不能是字符,输出所有行所有列的内容，输出第0列到最后一列所有行的内容
+    print("X为: "+X)
+    Y=dataset.iloc[:,3].values
 
     #第三步 处理丢失数据
     from sklearn.preprocessing import Imputer
