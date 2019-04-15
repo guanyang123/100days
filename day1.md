@@ -7,11 +7,13 @@ ___________
     import numpy as np          
     import pandas as pd 
     ```     
-    #第二步 导入数据库  
-    dataset=pd.read_csv('Data.csv')   #读取csv文件  read_csv()方法： 从文件，url，文件型对象中加载带分隔符的数据。默认分隔符为逗号  
-    X=dataset.iloc[:,:-1].values      #全部行or列；[a]第a行or列  iloc[前闭后开]方法：通过行号获取行数据，不能是字符(输出所有行第0列到倒数第二列的内容)
+    #第二步 导入数据库;读取csv文件  read_csv()方法： 从文件，url，文件型对象中加载带分隔符的数据。默认分隔符为逗号 ;  
+    全部行or列；[a]第a行or列  iloc[前闭后开]方法：通过行号获取行数据，不能是字符(输出所有行第0列到倒数第二列的内容)
+    dataset=pd.read_csv('Data.csv')    
+    X=dataset.iloc[:,:-1].values      
     #print("X为: "+str(X))
-    Y=dataset.iloc[:,3].values        #(输出所有行第三列的内容）
+    #(输出所有行第三列的内容）
+    Y=dataset.iloc[:,3].values       
     #print("Y为: "+str(Y))
 
     #第三步 处理丢失数据
