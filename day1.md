@@ -2,7 +2,7 @@
 ===========
 数据预处理
 ___________
-    ```python
+ ```python
     #第一步 导入库,numpy:以矩阵为基础的数学计算模块，纯数学;numpy:以矩阵为基础的数学计算模块，纯数学。
     import numpy as np          
     import pandas as pd 
@@ -54,6 +54,6 @@ ___________
     X_test=sc_X.transform(X_test)
     #print(X_train)
     #print(X_test)  
-    ```
+```
     
     
