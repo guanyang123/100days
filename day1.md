@@ -45,7 +45,8 @@ ___________
 X_train,X_test, y_train, y_test=cross_validation.train_test_split(train_data,train_target,test_size=0.3, random_state=0)；
 random_state:其他参数一样的情况下你得到的随机数组每次都是不一样的；train_data：被划分的样本特征集；
 train_target：被划分的样本标签；test_size：如果是浮点数，在0-1之间，表示样本占比；如果是整数的话就是样本的数量
-    X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=0.2,random_state=0)     
+    X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=0.2,random_state=0) 
+    
     #第六步 特征量化
     from sklearn.preprocessing import StandardScaler
     #StandardScaler():计算训练集的平均值和标准差，以便测试数据集使用相同的变换
