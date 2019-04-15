@@ -3,7 +3,7 @@
 数据预处理
 ___________
  ```python
-    #第一步 导入库,numpy:以矩阵为基础的数学计算模块，纯数学;numpy:以矩阵为基础的数学计算模块，纯数学。
+    #第一步 导入库,numpy:以矩阵为基础的数学计算模块，纯数学;pandas:处理分析表格数据的工具。
     import numpy as np          
     import pandas as pd 
       
