@@ -29,7 +29,7 @@ ___________
     from sklearn.preprocessing import LabelEncoder,OneHotEncoder       
     labelencoder_X=LabelEncoder()
     #fit_transform(trainData)对部分数据先拟合fit，找到该part的整体指标，如均值、方差、最大值最小值等等（根据具体转换的目的），
-    然后对该trainData进行转换transform，从而实现数据的标准化、归一化等等。X[:,0]即取数组X所有行第0列的数据
+然后对该trainData进行转换transform，从而实现数据的标准化、归一化等等。X[:,0]即取数组X所有行第0列的数据
     #创建虚拟变量
     X[:,0]=labelencoder_X.fit_transform(X[:,0]) 
     #OneHotEncoder()即独热编码，直观的来看就是有几个需要编码的状态就有几个比特；categorical_features是需要独热编码的列索引
@@ -42,9 +42,9 @@ ___________
     #第五步 拆分数据集为训练集合和测试集合
     from sklearn.model_selection import train_test_split
     #train_test_split函数用于将矩阵随机划分为训练子集和测试子集，并返回划分好的训练集测试集样本和训练集测试集标签。格式：
-    X_train,X_test, y_train, y_test=cross_validation.train_test_split(train_data,train_target,test_size=0.3, random_state=0)；
-    random_state:其他参数一样的情况下你得到的随机数组每次都是不一样的；train_data：被划分的样本特征集；
-    train_target：被划分的样本标签；test_size：如果是浮点数，在0-1之间，表示样本占比；如果是整数的话就是样本的数量
+X_train,X_test, y_train, y_test=cross_validation.train_test_split(train_data,train_target,test_size=0.3, random_state=0)；
+random_state:其他参数一样的情况下你得到的随机数组每次都是不一样的；train_data：被划分的样本特征集；
+train_target：被划分的样本标签；test_size：如果是浮点数，在0-1之间，表示样本占比；如果是整数的话就是样本的数量
     X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=0.2,random_state=0)     
     #第六步 特征量化
     from sklearn.preprocessing import StandardScaler
