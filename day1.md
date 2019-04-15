@@ -3,7 +3,7 @@
 数据预处理
 ___________
     #第一步 导入库  
-    import numpy as np        #numpy:以矩阵为基础的数学计算模块，纯数学。  
+    //import numpy as np        #numpy:以矩阵为基础的数学计算模块，纯数学。  
     import pandas as pd       #Pandas:一个处理分析表格数据的工具  
     #第二步 导入数据库  
     dataset=pd.read_csv('Data.csv')   #读取csv文件  read_csv()方法： 从文件，url，文件型对象中加载带分隔符的数据。默认分隔符为逗号  
