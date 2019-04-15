@@ -2,11 +2,11 @@
 ===========
 数据预处理
 ___________
+    ```python
     #第一步 导入库,numpy:以矩阵为基础的数学计算模块，纯数学;numpy:以矩阵为基础的数学计算模块，纯数学。
-     ```python
     import numpy as np          
     import pandas as pd 
-    ```     
+      
     #第二步 导入数据库;读取csv文件  read_csv()方法： 从文件，url，文件型对象中加载带分隔符的数据。默认分隔符为逗号  
     #全部行or列；[a]第a行or列  iloc[前闭后开]方法：通过行号获取行数据，不能是字符(输出所有行第0列到倒数第二列的内容)
     dataset=pd.read_csv('Data.csv')    
@@ -54,4 +54,5 @@ ___________
     X_test=sc_X.transform(X_test)
     #print(X_train)
     #print(X_test)
+    ```
     
