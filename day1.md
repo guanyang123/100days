@@ -4,7 +4,7 @@
 ___________
     #第一步 导入库  
     import numpy as np        #numpy:以矩阵为基础的数学计算模块，纯数学。  
-    import pandas as pd       #Pandas:属于一款很适合做数据分析的框架，可以理解成表格+时间戳,即表格容器。  
+    import pandas as pd       #Pandas:一个处理分析表格数据的工具  
     #第二步 导入数据库  
     dataset=pd.read_csv('Data.csv')   #读取csv文件  read_csv()方法： 从文件，url，文件型对象中加载带分隔符的数据。默认分隔符为逗号  
     X=dataset.iloc[:,:-1].values      #全部行or列；[a]第a行or列  iloc[前闭后开]方法：通过行号获取行数据，不能是字符(输出所有行第0列到倒数第二列的内容)
@@ -14,7 +14,7 @@ ___________
 
     #第三步 处理丢失数据
     from sklearn.preprocessing import Imputer     #从sklearn.preprocessing模块中导入Imputer函数
-    imputer=Imputer(missing_values="NaN",strategy="mean",axis=0)    #使用字符串'nan'来代替数据集中的缺失值;strategy采用均值策略,填补第0列;axis = 0指第0列，axis后面的值是指定一个轴做运算
+    imputer=Imputer(missing_values="NaN",strategy="mean",axis=0)    #告诉Imputer丢失数据的类型是nan,nan意为not a number;strategy采用均值策略,填补第0列;axis = 0指第0列，axis后面的值是指定一个轴做运算
     imputer=imputer.fit(X[:1,1:3])      #fit():求得训练集X的均值为训练集X固有的属性
     #print(X)
 
