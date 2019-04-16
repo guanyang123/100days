@@ -1,4 +1,7 @@
-
+100days
+===========
+day1
+___________
 ```python
   #第一步 数据预处理
   #matplotlib.pyplot是一个命令型函数集合，它可以让我们像使用MATLAB一样使用matplotlib，用来绘图。
