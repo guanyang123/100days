@@ -1,6 +1,7 @@
 
 ```python
   #第一步 数据预处理
+  #matplotlib.pyplot是一个命令型函数集合，它可以让我们像使用MATLAB一样使用matplotlib，用来绘图。
   import pandas as pd
   import numpy as np
   import matplotlib.pyplot as plt
@@ -23,6 +24,14 @@ train_target：被划分的样本标签；test_size：如果是浮点数，在0-
   X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 1/4,random_state = 0)
   #print("X_train为: "+str(X_train))
   #print("X_test为: "+str(X_test))
+  
+  #第二步 对训练集应用简单的线性回归模型
+  #LinerRegression:线性回归，线性回归是最典型的回归问题，其目标值与所有的特征之间存在线性关系。
+  from sklearn.linear_model import LinearRegression
+  regressor=LinearRegression()
+  #fit():求得训练集X_train,Y_train的均值,方差，最大值，最小值为训练集固有的属性
+  regressor=regressor.fit(X_train,Y_train)
+  print("regressor为："+str(regressor))
   
   
   
