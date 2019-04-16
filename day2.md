@@ -68,7 +68,7 @@ figure 1
   ![image text](https://github.com/guanyang123/100days/blob/master/image/2.6.png)
 figure 2
 ===========
-  ![image text](https://github.com/guanyang123/100days/blob/master/2.7.PNG)
+  ![image text](https://github.com/guanyang123/100days/blob/master/image/2.7.PNG)
 
   
   
