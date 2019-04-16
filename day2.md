@@ -63,3 +63,12 @@ x轴数据，y轴数据，format_string控制曲线的格式字串 ,format_strin
   #显示图形
   plt.show() 
   ```
+figure 1
+===========
+    https://github.com/guanyang123/100days/blob/master/2.6.png
+figure 2
+===========
+    https://github.com/guanyang123/100days/blob/master/2.7.png
+  
+  
+  
