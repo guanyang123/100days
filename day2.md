@@ -20,11 +20,8 @@ ___________
   
   #拆分数据集为训练集合和测试集合
   from sklearn.model_selection import train_test_split
-  #train_test_split函数用于将矩阵随机划分为训练子集和测试子集，并返回划分好的训练集测试集样本和训练集测试集标签。格式：
-X_train,X_test, y_train, y_test=cross_validation.train_test_split(train_data,train_target,test_size=0.3, random_state=0)；
-random_state:其他参数一样的情况下你得到的随机数组每次都是不一样的；train_data：被划分的样本特征集；
-train_target：被划分的样本标签；test_size：如果是浮点数，在0-1之间，表示样本占比；如果是整数的话就是样本的数量
-  X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 1/4,random_state = 0)
+  #train_test_split函数用于将矩阵随机划分为训练子集和测试子集，并返回划分好的训练集测试集样本和训练集测试集标签。
+  X_train,X_test,Y_train,Y_test=train_test_split(X, Y, test_size=1/4, random_state=0)
   #print("X_train为: "+str(X_train))
   #print("X_test为: "+str(X_test))
   
@@ -49,12 +46,9 @@ train_target：被划分的样本标签；test_size：如果是浮点数，在0-
   plt.xlabel('Hours')
   plt.ylabel('Scores')
   plt.title('machine')
-  #scatter():绘制散点图，格式:scatter(x, y, s, color，marker)，这是最主要的几个用法，
-如果括号中不写s=  c=则按默认顺序，写了则按规定的来，不考虑顺序；s(点的大小)默认为20；marker(标记)默认为'o';'o'(英文状态下)
+  #scatter():绘制散点图，格式:scatter(x, y, s, color，marker)
   plt.scatter(X_train,Y_train,color='red')
-  #绘制(实线、破折线、点划线、虚线、无线条)图，格式:plt.plot(x,y,data,format_string,**kwargs),
-x轴数据，y轴数据，format_string控制曲线的格式字串 ,format_string 由颜色字符，风格字符，和标记字符组成，
-  #**kwargs是键值参数，相当于一个字典，
+  #绘制(实线、破折线、点划线、虚线、无线条)图，格式:plt.plot(x,y,data,format_string,**kwargs)。
   plt.plot(X_train,regressor.predict(X_train),color='blue')
   #可视化测试集结果
   plt.figure(2)
