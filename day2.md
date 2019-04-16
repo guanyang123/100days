@@ -45,6 +45,10 @@ train_target：被划分的样本标签；test_size：如果是浮点数，在0-
 
   #第四步 绘图
   #可视化训练集结果
+  plt.figure(1)
+  plt.xlabel('Hours')
+  plt.ylabel('Scores')
+  plt.title('machine')
   #scatter():绘制散点图，格式:scatter(x, y, s, color，marker)，这是最主要的几个用法，
 如果括号中不写s=  c=则按默认顺序，写了则按规定的来，不考虑顺序；s(点的大小)默认为20；marker(标记)默认为'o';'o'(英文状态下)
   plt.scatter(X_train,Y_train,color='red')
@@ -53,6 +57,7 @@ x轴数据，y轴数据，format_string控制曲线的格式字串 ,format_strin
   #**kwargs是键值参数，相当于一个字典，
   plt.plot(X_train,regressor.predict(X_train),color='blue')
   #可视化测试集结果
+  plt.figure(2)
   plt.scatter(X_test,Y_test,color='red')
   plt.plot(X_test,regressor.predict(X_test),color='blue')
   #显示图形
