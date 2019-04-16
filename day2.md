@@ -65,7 +65,7 @@ x轴数据，y轴数据，format_string控制曲线的格式字串 ,format_strin
 ```
 figure 1
 ===========
-  ![image text](https://github.com/guanyang123/100days/blob/master/image/2.6.png)
+  ![image text](https://github.com/guanyang123/100days/blob/master/image/2.6.png)  
 figure 2
 ===========
   ![image text](https://github.com/guanyang123/100days/blob/master/image/2.7.PNG)
