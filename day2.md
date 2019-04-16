@@ -21,7 +21,7 @@ ___________
   #拆分数据集为训练集合和测试集合
   from sklearn.model_selection import train_test_split
   #train_test_split函数用于将矩阵随机划分为训练子集和测试子集，并返回划分好的训练集测试集样本和训练集测试集标签。
-  X_train,X_test,Y_train,Y_test=train_test_split(X, Y, test_size=1/4, random_state=0)
+  X_train, X_test, Y_train, Y_test=train_test_split(X, Y, test_size=1/4, random_state=0)
   #print("X_train为: "+str(X_train))
   #print("X_test为: "+str(X_test))
   
@@ -30,7 +30,7 @@ ___________
   from sklearn.linear_model import LinearRegression
   regressor = LinearRegression()
   #fit():求得训练集X_train,Y_train的均值,方差，最大值，最小值为训练集固有的属性
-  regressor = regressor.fit(X_train,Y_train)
+  regressor = regressor.fit(X_train, Y_train)
   #coef_存放回归系数，intercept_存放截距
   #print("regressor.coef_为："+str(regressor.coef_))
   #print("regressor.intercept_为："+str(regressor.intercept_))
@@ -47,13 +47,13 @@ ___________
   plt.ylabel('Scores')
   plt.title('machine')
   #scatter():绘制散点图，格式:scatter(x, y, s, color，marker)
-  plt.scatter(X_train,Y_train,color='red')
-  #绘制(实线、破折线、点划线、虚线、无线条)图，格式:plt.plot(x,y,data,format_string,**kwargs)。
-  plt.plot(X_train,regressor.predict(X_train),color='blue')
+  plt.scatter(X_train, Y_train, color='red')
+  #绘制(实线、破折线、点划线、虚线、无线条)图，格式:plt.plot(x, y, data, format_string, **kwargs)。
+  plt.plot(X_train, regressor.predict(X_train), color='blue')
   #可视化测试集结果
   plt.figure(2)
-  plt.scatter(X_test,Y_test,color='red')
-  plt.plot(X_test,regressor.predict(X_test),color='blue')
+  plt.scatter(X_test, Y_test, color='red')
+  plt.plot(X_test, regressor.predict(X_test), color='blue')
   #显示图形
   plt.show() 
 ```
