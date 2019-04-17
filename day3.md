@@ -21,7 +21,7 @@ ___________
     from sklearn.preprocessing import LabelEncoder, OneHotEncoder
     labelencoder = LabelEncoder()
     # fit_transform(trainData)对部分数据先拟合fit，然后对该trainData进行转换transform，从而实现数据的标准化、归一化等等。
-    # X[:,0]即取数组X所有行第0列的数据
+    # X[:,3]即取数组X所有行第3列的数据
     X[:, 3] = labelencoder.fit_transform(X[:, 3])
     # print("X[:,3]为："+str(X[:,3]))
     onehotencoder = OneHotEncoder(categorical_features=[3])
