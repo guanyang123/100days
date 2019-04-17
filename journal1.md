@@ -12,8 +12,8 @@
     x轴数据，y轴数据，`format_string`控制曲线的格式字串 ,format_string 由颜色字符，风格字符，和标记字符组成。`**kwargs`是键值参数，
     相当于一个字典。
     
-4、`OneHotEncoder()`即独热编码，直观的来看就是有几个需要编码的状态就有几个比特；`categorical_features`是需要独热编码的列索引。首先onehot会增加三个虚拟变量，里面好多0导致矩阵使用稀疏矩阵存储，存储方式为(x,y) value的格式，(x,y)表示坐标，value表示值。不一定三个，这个day里的数据是三个
-toarray之后就是换回原来的行列存储方式
+4、`OneHotEncoder()`即独热编码，直观的来看就是有几个需要编码的状态就有几个比特；`categorical_features`是需要独热编码的列索引。首先`onehot`会增加三个虚拟变量，里面好多0导致矩阵使用稀疏矩阵存储，存储方式为`(x,y) value`的格式，`(x,y)`表示坐标，`value`表示值。不一定三个，这个`day`里的数据是三个
+`toarray`之后就是换回原来的行列存储方式
 
  
 
