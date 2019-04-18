@@ -1,4 +1,5 @@
-2019/4/16
+2019/4/18
+把前三天里面一些词汇着重理解了一下。
 ===========
 1、`train_test_split`函数用于将矩阵随机划分为训练子集和测试子集，并返回划分好的训练集测试集样本和训练集测试集标签。格式：
     X_train,X_test, y_train, y_test=cross_validation.train_test_split(train_data,train_target,test_size=0.3, random_state=0)；
