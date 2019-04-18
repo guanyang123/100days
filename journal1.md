@@ -11,15 +11,10 @@ ___________
 ![image text](https://github.com/guanyang123/100days/blob/master/image/4.2.jpg)
     
 3、`plot()`:绘制(实线、破折线、点划线、虚线、无线条)图，格式:plt.plot(x,y,data,format_string,**kwargs),
-    x轴数据，y轴数据，`format_string`控制曲线的格式字串 ,format_string 由颜色字符，风格字符，和标记字符组成。`**kwargs`是键值参数, 相当于一个字典。关于plot()函数的用法点击这个网址
-    [Spring-data-jpa text](https://blog.csdn.net/cjcrxzz/article/details/79627483)  
-    [plot用法](https://blog.csdn.net/cjcrxzz/article/details/79627483)
+    x轴数据，y轴数据，`format_string`控制曲线的格式字串 ,format_string 由颜色字符，风格字符，和标记字符组成。`**kwargs`是键值参数, 相当于一个字典。[plot用法](https://blog.csdn.net/cjcrxzz/article/details/79627483)
    
-    
 4、`OneHotEncoder()`即独热编码，直观的来看就是有几个需要编码的状态就有几个比特；`categorical_features`是需要独热编码的列索引。首先`onehot`会增加三个虚拟变量，里面好多0导致矩阵使用稀疏矩阵存储，存储方式为`(x,y) value`的格式，`(x,y)`表示坐标，`value`表示值。不一定三个，这个`day`里的数据是三个
 `toarray`之后就是换回原来的行列存储方式
-
- 
 
 5、`fit_transform(trainData)`对部分数据先拟合fit，找到该part的整体指标，如均值、方差、最大值最小值等等（根据具体转换的目的），
 然后对该trainData进行转换transform，从而实现数据的标准化、归一化等等。`X[:,0]`即取数组X所有行第0列的数据
