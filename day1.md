@@ -21,14 +21,16 @@ ___________
     #告诉Imputer丢失数据的类型是nan,nan意为not a number;strategy采用均值策略,填补第0列;axis = 0指第0列，axis后面的值是指定一个轴做运算
     imputer=Imputer(missing_values="NaN",strategy="mean",axis=0) 
     #fit():求得训练集X的均值为训练集X固有的属性；X[:1,1:3]是取第0行的第一列和第二列的内容。
-    imputer=imputer.fit(X[:1,1:3])      
+    imputer=imputer.fit(X[:1,1:3]) 
+    #transform():通过找中心和缩放等实现标准化
+    X[:,1:3]=imputer.transform(X[:,1:3])
     #print(X)
 
     #第四步 解决分类数据
     #LabelEncoder()是标签编码，即是对不连续的数字或者文本进行编号，转换成连续的数值型变量
     from sklearn.preprocessing import LabelEncoder,OneHotEncoder       
     labelencoder_X=LabelEncoder()
-    #fit_transform(trainData)对部分数据先拟合fit，找到该part的整体指标，如均值、方差、最大值最小值等等（根据具体转换的目的），
+    #fit_transform(trainData)对部分数据先拟合(即先拟合数据），找到该part的整体指标，如均值、方差、最大值最小值等等（根据具体转换的目的），
 然后对该trainData进行转换transform，从而实现数据的标准化、归一化等等。X[:,0]即取数组X所有行第0列的数据
     #创建虚拟变量
     X[:,0]=labelencoder_X.fit_transform(X[:,0]) 
