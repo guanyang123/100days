@@ -15,8 +15,8 @@ ___________
    
 4、`OneHotEncoder()`即独热编码，直观的来看就是有几个需要编码的状态就有几个比特；`categorical_features`是需要独热编码的列索引。首先`onehot`会增加三个虚拟变量，里面好多0导致矩阵使用稀疏矩阵存储，存储方式为`(x,y) value`的格式，`(x,y)`表示坐标，`value`表示值。不一定三个，这个`day`里的数据是三个
 `toarray`之后就是换回原来的行列存储方式。toarray之前的结果
-![image text](https://github.com/guanyang123/100days/blob/master/image/3.61PNG)  
-![image text](https://github.com/guanyang123/100days/blob/master/image/3.62PNG)
+![image text](https://github.com/guanyang123/100days/blob/master/image/3.61.PNG)  
+![image text](https://github.com/guanyang123/100days/blob/master/image/3.62.PNG)
 
 5、`fit_transform(trainData)`对部分数据先拟合fit，找到该part的整体指标，如均值、方差、最大值最小值等等（根据具体转换的目的），
 然后对该trainData进行转换transform，从而实现数据的标准化、归一化等等。`X[:,0]`即取数组X所有行第0列的数据
