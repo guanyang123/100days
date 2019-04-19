@@ -13,7 +13,7 @@
 （6）特征量化，使用StandardScaler()函数来标准化数据
 
 3、一个多变量线性回归模型表示为
-![image text](https://github.com/guanyang123/100days/blob/master/image/2.7.PNG)
+![image text](https://github.com/guanyang123/100days/blob/master/image/2.8.jpg)
 
 
 
