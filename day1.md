@@ -1,6 +1,6 @@
 100days
 ===========
-day1
+day1 数据预处理
 ___________
  ```python
     #第一步 导入库,numpy:以矩阵为基础的数学计算模块，纯数学;pandas:处理分析表格数据的工具。
@@ -51,7 +51,7 @@ train_target：被划分的样本标签；test_size：如果是浮点数，在0-
     
     #第六步 特征量化
     from sklearn.preprocessing import StandardScaler
-    #StandardScaler():计算训练集的平均值和标准差，以便测试数据集使用相同的变换
+    #StandardScaler():标准化数据，计算训练集的平均值和标准差，以便测试数据集使用相同的变换
     sc_X=StandardScaler()           
     X_train=sc_X.fit_transform(X_train)
     X_test=sc_X.transform(X_test)
