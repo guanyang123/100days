@@ -11,4 +11,15 @@
 （4）解决分类数据，先后使用LabelEncoder()函数和OneHotEncoder()函数来形成数值型数据集
 （5）使用train_test_split()函数拆分数据集为训练集和测试集5
 （6）特征量化，使用StandardScaler()函数来标准化数据
+
+3、一个多变量线性回归模型表示为
+![image text](https://github.com/guanyang123/100days/blob/master/image/2.7.PNG)
+
+
+
+
+
+
+4、把day2的代码重现敲了一遍，熟悉了简单线性回归模型的制作
+
  
