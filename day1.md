@@ -20,8 +20,8 @@ ___________
     from sklearn.preprocessing import Imputer
     #告诉Imputer丢失数据的类型是nan,nan意为not a number;strategy采用均值策略,填补第0列;axis = 0指第0列，axis后面的值是指定一个轴做运算
     imputer=Imputer(missing_values="NaN",strategy="mean",axis=0) 
-    #fit():求得训练集X的均值为训练集X固有的属性；X[:1,1:3]是取第0行的第一列和第二列的内容。
-    imputer=imputer.fit(X[:1,1:3]) 
+    #fit():求得训练集X的均值为训练集X固有的属性；X[:,1:3]是取所有行的第一列和第二列的内容。
+    imputer=imputer.fit(X[:,1:3]) 
     #transform():通过找中心和缩放等实现标准化
     X[:,1:3]=imputer.transform(X[:,1:3])
     #print(X)
