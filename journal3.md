@@ -9,3 +9,5 @@
 3工作库被称为线性模型库，之所以被称为线性是因为logistic回归是一个线性分类器，这意味着，由于我们在二维空间，我们的两类用户将被一条直线分开，然后导入逻辑回归类，接下来，我们将从这个勒种创建一个新对象，它将是我们的分类我，我们将把它放入我们的训练集中。
 
 4、[LogisticRegression()函数](https://blog.csdn.net/kingzone_2008/article/details/81067036)
+
+5、[confusion_matrix(混淆矩阵)](https://baijiahao.baidu.com/s?id=1619821729031070174&wfr=spider&for=pc)
