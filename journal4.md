@@ -4,7 +4,7 @@
 
 2、KNeighborsClassifier在`sklearn.neighbors`包之中，KNeighborsClassifier使用很简单，散步：（1）创建KNeighborsClassifier对象，（2）调用fit函数,(3)调用predict函数进行预测。  
 
-![KNN用法](https://blog.csdn.net/hjh00/article/details/63808075)  
-![KNN算法的参数](https://blog.csdn.net/d12340555hf/article/details/80075150)
+[KNN用法](https://blog.csdn.net/hjh00/article/details/63808075)  
+[KNN算法的参数](https://blog.csdn.net/d12340555hf/article/details/80075150)
 
 
