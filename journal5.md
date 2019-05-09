@@ -11,3 +11,13 @@
 以0.01的步伐在Y轴上取点：np.arange(start=X_set[:,1].min()-1, stop=X_set[:,1].max()+1, step = 0.01)
     [meshgrid介绍](https://www.cnblogs.com/black-mamba/p/9186965.html)
     [机器学习第13天代码及解释](https://blog.csdn.net/STILLxjy/article/details/86515408)
+
+5、假设A是一个 m 行 n 列的矩阵；
+   `A.min(0) `: 返回A每一列最小值组成的一维数组；
+   `A.min(1)`：返回A每一行最小值组成的一维数组；
+   `A.max(0)`：返回A每一列最大值组成的一维数组；
+   `A.max(1)`：返回A每一行最大值组成的一维数组；  
+ 
+6、`arange()`是Numpy库中的函数，其返回值是数组对象，常用于循环；
+ [numpy.arange()用法](https://blog.csdn.net/eurus_/article/details/82215877)
+   
