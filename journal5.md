@@ -20,4 +20,12 @@
  
 6、`arange()`是Numpy库中的函数，其返回值是数组对象，常用于循环；
  [numpy.arange()用法](https://blog.csdn.net/eurus_/article/details/82215877)
-   
+
+7、[plt.contourf()用法](https://blog.csdn.net/lens___/article/details/83960810)
+
+8、`numpy.array()`用来创建一维数组或多维数组。在numpy模块中，我们经常会使用resize 和 reshape,在具体使用中，通常是使用`resize`改变数组的尺寸大小，使用`reshape`用来增加数组的维度。`shape`函数是numpy.core.fromnumeric中的函数，它的功能是`读取矩阵的长度`，比如shape[0]就是读取矩阵第一维度的长度。它的输入参数可以使一个整数表示维度，也可以是一个矩阵。
+
+9、[enumerate()说明](https://www.cnblogs.com/dylancao/p/7871558.html)
+
+10、对于一维数组或者列表，`unique`函数去除其中重复的元素，并按元素由大到小返回一个新的无元素重复的元组或者列表
+[元组介绍](https://www.runoob.com/python/python-tuples.html)
