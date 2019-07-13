@@ -87,10 +87,10 @@ plt.show()
 
 figure 1
 ===========
-  ![image text](https://github.com/guanyang123/100days/blob/master/image/34.1.png)  
+  ![image text](https://github.com/guanyang123/100days/blob/master/image/34.1.PNG)  
 figure 2
 ===========
-  ![image text](https://github.com/guanyang123/100days/blob/master/image/34.2.png)
+  ![image text](https://github.com/guanyang123/100days/blob/master/image/34.2.PNG)
 
 
 
