@@ -16,4 +16,4 @@ Tensorflow 支持异构设备分布式计算。`异构设备`: 指CPU、GPU 等�
 6、`Keras`是一个搭积木式的深度学习框架，用它可以很方便且直观地搭建一些常见的深度学习模型。
 
 7、`kears  model.compile()函数`用来配置模型
-！[image text](https://github.com/guanyang123/100days/blob/master/image/39.3.PNG)
+![image text](https://github.com/guanyang123/100days/blob/master/image/39.3.PNG)
