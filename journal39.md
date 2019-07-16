@@ -17,3 +17,5 @@ Tensorflow 支持异构设备分布式计算。`异构设备`: 指CPU、GPU 等�
 
 7、`kears  model.compile()函数`用来配置模型
 ![image text](https://github.com/guanyang123/100days/blob/master/image/39.3.PNG)
+
+8、`model.evaluate函数`预测给定输入的输出，然后计算model.compile中指定的metrics函数，并基于y_true和y_pred，并返回计算的度量值作为输出
