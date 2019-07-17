@@ -1,6 +1,6 @@
 100days
 ===========
-day39 深度学习基础Python，TensorFlow和Keras
+day40 深度学习基础Python，TensorFlow和Keras
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
